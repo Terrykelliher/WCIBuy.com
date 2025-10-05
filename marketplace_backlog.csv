@@ -1,0 +1,13 @@
+phase,item,owner,eta_sprint
+MVP,Merchant onboarding (email + domain verification),Eng,1
+MVP,Shopify OAuth + product sync (webhooks),Eng,2
+MVP,Geolocated product search via WCIBuy index,Eng,2
+MVP,"Buyers.chat storefront (list, product, cart -> external checkout)",FE,3
+MVP,Syndication to localcommerce.news (auto-post templates),CMS,3
+MVP,Classifieds posting + moderation,CMS,3
+MVP,"Analytics: impressions, clicks, CTR per merchant/channel",Data,4
+V1,Stripe Connect for local payouts,Eng,5
+V1,WooCommerce importer,Eng,5
+V1,Inventory reservations for Buy Online Pickup In-Store (BOPIS),Eng,6
+V1,Promoted listings / ads manager,FE,6
+V1,AI product enrichment via aiLocal.chat,AI,6

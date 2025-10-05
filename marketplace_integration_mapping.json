@@ -1,0 +1,61 @@
+{
+  "brands": [
+    "Marketplace.news",
+    "WCIBuy.com"
+  ],
+  "channels": {
+    "news": [
+      "localcommerce.news",
+      "localclassified.news",
+      "localshopper.news",
+      "dailyshopper.news"
+    ],
+    "apps": [
+      "buyers.chat",
+      "marketplace.media",
+      "wcibuy.com"
+    ]
+  },
+  "ingest": {
+    "shopify": {
+      "auth": "oauth",
+      "scope": [
+        "read_products",
+        "read_inventory",
+        "read_locations"
+      ]
+    },
+    "woocommerce": {
+      "auth": "api_keys",
+      "scope": [
+        "read"
+      ]
+    },
+    "custom_csv": {
+      "columns": [
+        "title",
+        "description",
+        "price",
+        "sku",
+        "inventory",
+        "image_url",
+        "category",
+        "lat",
+        "lng",
+        "city",
+        "state",
+        "postal_code"
+      ]
+    }
+  },
+  "search": {
+    "endpoint": "wcibuy.com/search",
+    "facets": [
+      "category",
+      "price_range",
+      "availability",
+      "distance",
+      "merchant"
+    ]
+  }
+}

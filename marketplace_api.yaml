@@ -1,0 +1,79 @@
+
+openapi: 3.0.3
+info:
+  title: PublicAccess Marketplace API
+  version: 0.1.0
+servers:
+  - url: https://api.publicaccess.marketplace
+paths:
+  /tenants:
+    post:
+      summary: Create tenant
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                slug: {type: string}
+                display_name: {type: string}
+      responses: {"201": { "description": "Created" }}
+  /merchants:
+    post:
+      summary: Register merchant
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                tenant_id: {type: string, format: uuid}
+                name: {type: string}
+                contact_email: {type: string, format: email}
+                website: {type: string}
+                stripe_account_id: {type: string}
+                shopify_store_domain: {type: string}
+      responses: {"201": { "description": "Created" }}
+  /products/import/shopify:
+    post:
+      summary: Import products from Shopify
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                merchant_id: {type: string, format: uuid}
+                shopify_access_token: {type: string}
+                store_domain: {type: string}
+      responses: {"202": { "description": "Import started" }}
+  /products/search:
+    get:
+      summary: Search products
+      parameters:
+        - in: query
+          name: q
+          schema: {type: string}
+        - in: query
+          name: lat
+          schema: {type: number}
+        - in: query
+          name: lng
+          schema: {type: number}
+        - in: query
+          name: radius_km
+          schema: {type: number, default: 25}
+      responses:
+        "200":
+          description: Results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items: {type: object}

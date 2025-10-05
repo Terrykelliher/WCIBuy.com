@@ -1,0 +1,8 @@
+sheet,domain,notes,type
+Sheet1,Marketplace.news,"{'Marketplace.Media': 'Marketplace.news', 'Find Catalogues/WCIBuy.com': 'https://www.Accessorycatalogue.com', 'Streamingnetwork.Media': 'Streamingnetwork.news', 'Chat': 'Buyers.chat'}",news
+Sheet1,WCIBuy.com,"{'Marketplace.Media': 'WCIBuy.com', 'Find Catalogues/WCIBuy.com': 'https://www.Aicatalogue.com', 'Streamingnetwork.Media': 'WCIBuy.TV', 'Chat': nan}",catalogue/dir/utility
+Sheet1,Wherecouldibuy.com,"{'Marketplace.Media': 'Wherecouldibuy.com', 'Find Catalogues/WCIBuy.com': 'https://www.Antiquecatalogue.net', 'Streamingnetwork.Media': 'Commerceservices.TV', 'Chat': nan}",catalogue/dir/utility
+Sheet1,WCIFind.com,"{'Marketplace.Media': 'WCIFind.com', 'Find Catalogues/WCIBuy.com': 'https://www.Appcatalogue.com', 'Streamingnetwork.Media': 'Marketplacesales.TV', 'Chat': nan}",catalogue/dir/utility
+Sheet1,WCIRent.com,"{'Marketplace.Media': 'WCIRent.com', 'Find Catalogues/WCIBuy.com': 'https://www.Appliancecatalogue.com', 'Streamingnetwork.Media': nan, 'Chat': nan}",catalogue/dir/utility
+Sheet1,Wherecouldirent.com,"{'Marketplace.Media': 'Wherecouldirent.com', 'Find Catalogues/WCIBuy.com': 'https://www.Artcatalogue.net', 'Streamingnetwork.Media': nan, 'Chat': nan}",catalogue/dir/utility
+Sheet1,Whereyoucan.Shop,"{'Marketplace.Media': 'Whereyoucan.Shop', 'Find Catalogues/WCIBuy.com': 'https://www.Artisancatalogue.com', 'Streamingnetwork.Media': nan, 'Chat': nan}",catalogue/dir/utility
